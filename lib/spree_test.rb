@@ -1,13 +1,15 @@
 require "spree_test/version"
 
 module SpreeTest
-  class Food
-    def self.send(params)
+    class Food
+        def self.send(notifications)
       
-      #~ response = HTTParty.get('http://api.stackexchange.com/2.2/questions?site=stackoverflow')
-      #~ puts response.body, response.code, response.message, response.headers.inspect
-      puts params
+            for notification in notifications
+                if(notification['platform'] == 'slack')
+                    HTTParty.post(notification['url'], :body => notification['payload'].to_json, :headers => { 'Content-Type' => 'application/json' })
+                end
+            end
       
+        end
     end
-  end
 end

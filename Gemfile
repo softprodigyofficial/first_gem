@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in spree_test.gemspec
+# Specify your gem's dependencies in rails_notify.gemspec
 gemspec

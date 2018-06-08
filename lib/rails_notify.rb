@@ -1,7 +1,8 @@
-require "spree_test/version"
+require "rails_notify/version"
 
-module SpreeTest
-    class Food
+module RailsNotify
+	class Notification
+		
         def self.send(notifications)
       
             for notification in notifications
@@ -11,5 +12,6 @@ module SpreeTest
             end
       
         end
+        
     end
 end

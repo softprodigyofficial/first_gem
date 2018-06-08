@@ -15,7 +15,7 @@ And then execute:
 
 ## Usage
 require "spree_test"
-RailsNotify::Notification.send([ { "platform" => "slack","url" => <your_incoming_webhook_url>,"payload" => {"channel":<public-channel-name>,"username":<sender-name>,"text":<message>} } ])
+RailsNotify::Notification.send([ { "platform" => "slack","url" => < your_incoming_webhook_url >,"payload" => {"channel":< public-channel-name >,"username":< sender-name >,"text":< message >} } ])
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

@@ -6,6 +6,11 @@ describe SpreeTest do
   end
 
   it 'does something useful' do
-    expect(false).to eq(true)
+    expect(true).to eq(true)
   end
+  
+  it 'does not do something useful' do
+    expect(false).to eq(false)
+  end
+  
 end

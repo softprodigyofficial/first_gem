@@ -7,14 +7,14 @@ Welcome to your new gem! Yout one gateway to send notifications from your rails 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'spree_test', github: 'softprodigyofficial/rails_notify', branch: 'master'
+gem 'rails_notify', github: 'softprodigyofficial/rails_notify', branch: 'master'
 ```
 
 And then execute:
     $ bundle install
 
 ## Usage
-require "spree_test"
+require "rails_notify"
 RailsNotify::Notification.send([ { "platform" => "slack","url" => < your_incoming_webhook_url >,"payload" => {"channel":< public-channel-name >,"username":< sender-name >,"text":< message >} } ])
 
 ## License

@@ -14,7 +14,7 @@ And then execute:
     $ bundle install
 
 ## Usage
-require "rails_notify"
+require "rails_notify" <br>
 RailsNotify::Notification.send([ { "platform" => "slack","url" => < your_incoming_webhook_url >,"payload" => {"channel":< public-channel-name >,"username":< sender-name >,"text":< message >} } ])
 
 ## License
